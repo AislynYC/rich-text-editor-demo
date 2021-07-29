@@ -1,0 +1,15 @@
+.wrapper {
+  width: 50%;
+  height: 480px;
+  border: 1px solid #bbb;
+  margin: 0 40px;
+}
+
+.descriptionIcon {
+  padding: 15px;
+}
+
+.component-wrapper {
+  display: block;
+  float: left;
+}

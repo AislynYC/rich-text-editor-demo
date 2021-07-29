@@ -1,0 +1,25 @@
+.colorWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.iconWrapper {
+  border: 1px solid #f1f1f1;
+  padding: 3px 5px;
+  height: 26px;
+}
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.colorModal {
+  position: absolute;
+  right: -70px;
+  top: 135%;
+  z-index: 10;
+}
