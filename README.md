@@ -1,6 +1,6 @@
 # Demo
 
-Visit https://aislynyc.github.io/rich-text-editor-demo/ for demo page.
+Visit https://aislynyc.github.io/rich-text-editor-demo for demo page.
 
 ## Intoduction
 
