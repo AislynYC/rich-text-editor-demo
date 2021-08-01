@@ -23,13 +23,15 @@ const App = () => {
       <div className="container">
         <RichTextEditor value={htmlInputValue} onChange={handleEditorOnChange} />
         <div className="html-inputs">
+          HTML Input
           <TextArea
-            rows={10}
-            placeholder="HTML Input"
+            rows={9}
+            placeholder="Input your HTML here to be the initial value of the editor."
             value={htmlInputValue}
             onChange={handleInputOnChange}
           />
-          <TextArea rows={10} placeholder="HTML Output" value={htmlOutputValue} />
+          HTML Output
+          <TextArea rows={9} value={htmlOutputValue} />
         </div>
       </div>
     </div>

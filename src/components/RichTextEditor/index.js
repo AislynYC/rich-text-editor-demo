@@ -7,8 +7,6 @@ import BraftEditor from "braft-editor";
 import "braft-editor/dist/index.css";
 import "./index.css";
 
-const EmptyHtml = "<p></p>";
-
 const RichTextEditor = ({
   onChange,
   value,
@@ -17,9 +15,7 @@ const RichTextEditor = ({
   enableToolbarOptions,
   ...otherProps
 }) => {
-  const [editorState, setEditorState] = useState(
-    BraftEditor.createEditorState(value || EmptyHtml)
-  );
+  const [editorState, setEditorState] = useState(BraftEditor.createEditorState(value));
 
   const onEditorStateChange = (editorState) => {
     setEditorState(editorState);
@@ -35,7 +31,7 @@ const RichTextEditor = ({
       <BraftEditor
         value={editorState}
         onChange={onEditorStateChange}
-        className="rich-text-editor" // className, controlBarClassName, contentClassName
+        className="rich-text-editor"
         contentClassName="editorContent"
         controls={enableToolbarOptions || controls}
         language="zh-hant"
@@ -49,7 +45,10 @@ const RichTextEditor = ({
             key: "description",
             type: "component",
             component: (
-              <Tooltip title={"Hi 你們好！"} className="descriptionIcon">
+              <Tooltip
+                title={"Hi 你們好！"}
+                className="descriptionIcon"
+                placement="bottom">
                 <QuestionCircleOutlined />
               </Tooltip>
             ),

@@ -6,10 +6,16 @@
 }
 
 .descriptionIcon {
-  padding: 15px;
+  padding: 11px;
 }
 
 .component-wrapper {
   display: block;
   float: left;
+  margin: 5px 0 5px 3px;
+}
+
+.component-wrapper:hover {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.05);
 }
